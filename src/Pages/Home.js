@@ -1,4 +1,6 @@
 import { styled } from "@mui/joy/styles";
+import { Sheet } from "@mui/joy";
+import { DemoVid } from "../Components/DemoVid";
 
 const Container = styled(Sheet)(({ theme }) => ({
   display: "flex",
@@ -10,7 +12,9 @@ const Container = styled(Sheet)(({ theme }) => ({
 export const Home = () => {
   return (
     <>
-      <Container></Container>
+      <Container>
+        <DemoVid />
+      </Container>
     </>
   );
 };
