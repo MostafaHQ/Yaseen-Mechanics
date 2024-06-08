@@ -6,6 +6,7 @@ import LocalMallOutlinedIcon from "@mui/icons-material/LocalMallOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import Badge from "@mui/material/Badge";
 import logoImg from "../Assets/logo-removebg-preview.png";
+import { useState } from "react";
 
 const NavbarContainer = styled(Sheet)(({ theme }) => ({
   display: "flex",
@@ -48,6 +49,7 @@ const IconContainer = styled(Sheet)(({ theme }) => ({
 }));
 
 export const Header = () => {
+  const [anchorEl, setAnchorEl] = useState(null);
   return (
     <>
       <NavbarContainer>

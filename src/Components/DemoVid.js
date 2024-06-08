@@ -10,7 +10,7 @@ export const DemoVid = () => {
   };
   return (
     <>
-      <Card sx={{ height: "800px" }}>
+      <Card sx={{ height: "100vh", position: "relative" }}>
         <CardCover>
           <video
             autoPlay
