@@ -1,11 +1,14 @@
 import { Sheet } from "@mui/joy";
 import { styled } from "@mui/joy/styles";
 import { Link } from "react-router-dom";
+import Popover from "@mui/material/Popover";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import LocalMallOutlinedIcon from "@mui/icons-material/LocalMallOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import Badge from "@mui/material/Badge";
 import logoImg from "../Assets/logo-removebg-preview.png";
+import { useState } from "react";
+import { UserMenu } from "../Components/UserMenu";
 
 const NavbarContainer = styled(Sheet)(({ theme }) => ({
   display: "flex",
@@ -48,6 +51,17 @@ const IconContainer = styled(Sheet)(({ theme }) => ({
 }));
 
 export const Header = () => {
+  const [anchorEl, setAnchorEl] = useState(null);
+
+  const handleUserMenuClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleUserMenuClose = () => {
+    setAnchorEl(null);
+  };
+
+  const isUserMenuOpen = Boolean(anchorEl);
   return (
     <>
       <NavbarContainer>
@@ -82,6 +96,7 @@ export const Header = () => {
               }}
             />
             <PersonOutlineOutlinedIcon
+              onClick={handleUserMenuClick}
               sx={{
                 display: {
                   xs: "none",
@@ -98,6 +113,20 @@ export const Header = () => {
           </IconContainer>
         </SideContainer>
       </NavbarContainer>
+      <Popover
+        open={isUserMenuOpen}
+        anchorEl={anchorEl}
+        onClose={handleUserMenuClose}
+        anchorOrigin={{
+          vertical: "bottom",
+          horizontal: "right",
+        }}
+        transformOrigin={{
+          vertical: "top",
+          horizontal: "left",
+        }}>
+        <UserMenu />
+      </Popover>
     </>
   );
 };
