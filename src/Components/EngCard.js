@@ -35,7 +35,8 @@ export const EngCard = ({ eng }) => {
         sx={{
           background: "var(--bright)",
           minWidth: "260px",
-          padding: "0",
+          padding: 2,
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
         }}>
         <Image src={eng.engPic} />
         <CardInfo>
