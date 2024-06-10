@@ -2,6 +2,7 @@ import { styled } from "@mui/joy/styles";
 import { Sheet } from "@mui/joy";
 import { DemoVid } from "../Components/DemoVid";
 import { Enginners } from "../Components/Engineers";
+import { NavigateButton } from "../Components/NavigateButton";
 
 const Container = styled(Sheet)(({ theme }) => ({
   display: "flex",
@@ -46,6 +47,9 @@ export const Home = () => {
       <Container>
         <DemoVid />
         <Enginners engs={engineers} />
+        <Sheet sx={{ display: "flex", justifyContent: "center" }}>
+          <NavigateButton text={"Submit a Complaint"} to={"/form"} />
+        </Sheet>
       </Container>
     </>
   );
