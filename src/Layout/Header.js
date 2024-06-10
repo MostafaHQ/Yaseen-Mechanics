@@ -66,7 +66,9 @@ export const Header = () => {
     <>
       <NavbarContainer>
         <SideContainer>
-          <Image src={logoImg} />
+          <Link to={"/"}>
+            <Image src={logoImg} />
+          </Link>
           <NavbarLinksContainer
             sx={{
               display: {
