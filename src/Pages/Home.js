@@ -14,7 +14,7 @@ const Container = styled(Sheet)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   background: "var(--bright)",
-  padding: "30px",
+  padding: "25px",
 }));
 
 export const Home = () => {
