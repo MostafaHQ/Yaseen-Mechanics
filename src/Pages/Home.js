@@ -9,12 +9,19 @@ import shadiPic from "../Assets/shadi.jpeg";
 import noorPic from "../Assets/noor.jpeg";
 import shareefPic from "../Assets/shareef.jpeg";
 import ashqarPic from "../Assets/Ashqar.jpeg";
+import elevator from "../Assets/elevator.jpg";
 
 const Container = styled(Sheet)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   background: "var(--bright)",
   padding: "25px",
+  gap: "30px",
+}));
+
+const Image = styled("img")(({ theme }) => ({
+  width: "100%",
+  height: "auto",
 }));
 
 export const Home = () => {
@@ -55,6 +62,7 @@ export const Home = () => {
       <Container>
         <DemoVid />
         <AboutProducts />
+        <Image src={elevator} />
         <Enginners engs={engineers} />
         {/* <Sheet sx={{ display: "flex", justifyContent: "center" }}>
           <NavigateButton text={"Submit a Complaint"} to={"/form"} />
