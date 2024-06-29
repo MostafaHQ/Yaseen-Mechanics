@@ -2,9 +2,10 @@ import { styled } from "@mui/material/styles";
 import { Sheet } from "@mui/joy";
 import { Link } from "react-router-dom";
 import Divider from "@mui/joy/Divider";
-import Fblogo from "../icons/fb logo.svg";
-import Instalogo from "../icons/insta logo.svg";
+import Fblogo from "../icons/facebook.svg";
+import Instalogo from "../icons/instagram-logo.svg";
 import Locationlogo from "../icons/location.svg";
+import whatsapplogo from "../icons/whatsapp-logo.svg";
 
 const FooterContainer = styled(Sheet)(({ theme }) => ({
   display: "flex",
@@ -94,7 +95,14 @@ const FilterLinks = styled(Link)(({ theme }) => ({
   background: "var(--primary)",
 }));
 
+const IconImg = styled("img")(({ theme }) => ({
+  width: "40px",
+  height: "40px",
+}));
+
 export const Footer = () => {
+  const whatsappLink = `https://wa.me/970597032370`;
+
   return (
     <>
       <FooterContainer>
@@ -124,10 +132,15 @@ export const Footer = () => {
             <Link
               to={"https://www.facebook.com/Yaseen.Mechanics"}
               target="_blank">
-              <img src={Fblogo} alt="Facebook logo" />
+              <IconImg src={Fblogo} alt="Facebook logo" />
             </Link>
-            <Link to={"https://www.instagram.com/"} target="_blank">
-              <img src={Instalogo} alt="Instagram logo" />
+            <Link
+              to={"https://www.instagram.com/yaseen.mechanics.co/"}
+              target="_blank">
+              <IconImg src={Instalogo} alt="Instagra logo" />
+            </Link>
+            <Link to={whatsappLink} target="_blank">
+              <IconImg src={whatsapplogo} alt="Whatsapp logo" />
             </Link>
           </IconsContainer>
           <Sheet>

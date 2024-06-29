@@ -7,9 +7,9 @@ const StyledButton = styled(Button)(({ theme }) => ({
   color: "var(--accent)",
   background: "#2B4B69",
   fontWeight: "var(--semi-bold-font)",
-  fontSize: "1.2rem",
-  width: "20vw",
-  height: "55px",
+  fontSize: "1rem",
+  width: "165px",
+  height: "35px",
 }));
 
 export const NavigateButton = ({ text, onClick, to }) => {

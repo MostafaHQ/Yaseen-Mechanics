@@ -1,14 +1,12 @@
-import { Sheet } from "@mui/joy";
+import { Button, Sheet } from "@mui/joy";
 import { styled } from "@mui/joy/styles";
 import { Link } from "react-router-dom";
 import Popover from "@mui/material/Popover";
-import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import LocalMallOutlinedIcon from "@mui/icons-material/LocalMallOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
-import Badge from "@mui/material/Badge";
 import logoImg from "../Assets/logo-removebg-preview.png";
 import { useState } from "react";
 import { UserMenu } from "../Components/UserMenu";
+import { NavigateButton } from "../Components/NavigateButton";
 
 const NavbarContainer = styled(Sheet)(({ theme }) => ({
   display: "flex",
@@ -85,18 +83,8 @@ export const Header = () => {
           </NavbarLinksContainer>
         </SideContainer>
         <SideContainer>
+          <NavigateButton text={"My Purchases"} to={"/purchases"} />
           <IconContainer>
-            <FavoriteBorderOutlinedIcon
-              sx={{
-                display: {
-                  xs: "none",
-                  sm: "none",
-                  md: "none",
-                  lg: "inline",
-                  xl: "inline",
-                },
-              }}
-            />
             <PersonOutlineOutlinedIcon
               onClick={handleUserMenuClick}
               sx={{
@@ -109,9 +97,6 @@ export const Header = () => {
                 },
               }}
             />
-            <Badge color="primary" variant="dot">
-              <LocalMallOutlinedIcon />
-            </Badge>
           </IconContainer>
         </SideContainer>
       </NavbarContainer>
