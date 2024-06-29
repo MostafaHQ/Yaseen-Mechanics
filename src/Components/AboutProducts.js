@@ -2,7 +2,6 @@ import { Sheet } from "@mui/joy";
 import { styled } from "@mui/joy/styles";
 import React from "react";
 import GenerateImg from "../Assets/generator.jpeg";
-import { padding } from "@mui/system";
 
 const Container = styled(Sheet)(({ theme }) => ({
   display: "flex",
@@ -38,7 +37,7 @@ const ImageSide = styled(Sheet)(({ theme }) => ({
 
 const WriteSide = styled(Sheet)(({ theme }) => ({
   background: "var(--bright)",
-  textAlign: "end",
+  textAlign: "center",
 }));
 
 const Title = styled("h2")(({ theme }) => ({
