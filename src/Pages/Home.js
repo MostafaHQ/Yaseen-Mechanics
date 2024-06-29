@@ -2,7 +2,6 @@ import { styled } from "@mui/joy/styles";
 import { Sheet } from "@mui/joy";
 import { DemoVid } from "../Components/DemoVid";
 import { Enginners } from "../Components/Engineers";
-import { NavigateButton } from "../Components/NavigateButton";
 import { AboutProducts } from "../Components/AboutProducts";
 import fahedPic from "../Assets/fahed.jpeg";
 import shadiPic from "../Assets/shadi.jpeg";
