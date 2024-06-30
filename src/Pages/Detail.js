@@ -1,6 +1,7 @@
 import { styled } from "@mui/joy/styles";
 import { Sheet } from "@mui/joy";
 import { PageTitle } from "../Components/PageTitle";
+import { ProductDetails } from "../Components/ProductDetails";
 
 const Container = styled(Sheet)(({ theme }) => ({
   display: "flex",
@@ -15,6 +16,7 @@ export const Detail = () => {
     <>
       <Container>
         <PageTitle text={"Product Details"} />
+        <ProductDetails />
       </Container>
     </>
   );
