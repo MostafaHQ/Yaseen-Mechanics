@@ -1,10 +1,16 @@
 import { styled } from "@mui/joy/styles";
 import Grid from "@mui/joy/Grid";
+import productImg from "../Assets/generator.jpeg";
 
 const StyledData = styled("p")(({ theme }) => ({
   fontSize: "1.2rem",
   fontWeight: "var(--semi-bold-font)",
   color: "var(--dark)",
+}));
+
+const StyledImg = styled("img")(({ theme }) => ({
+  width: "30%",
+  height: "auto",
 }));
 
 export const ProductDetails = () => {
@@ -44,6 +50,7 @@ export const ProductDetails = () => {
           <StyledData>every 3 months</StyledData>
         </Grid>
       </Grid>
+      <StyledImg src={productImg} />
     </>
   );
 };
