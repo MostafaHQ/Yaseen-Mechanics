@@ -9,13 +9,14 @@ import noorPic from "../Assets/noor.jpeg";
 import shareefPic from "../Assets/shareef.jpeg";
 import ashqarPic from "../Assets/Ashqar.jpeg";
 import elevator from "../Assets/elevator.jpg";
+import { Carousel } from "../Components/Carousel";
 
 const Container = styled(Sheet)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   background: "var(--bright)",
-  padding: "25px",
-  gap: "30px",
+  padding: "0px 25px 25px 25px",
+  gap: "20px",
 }));
 
 const Image = styled("img")(({ theme }) => ({
@@ -59,13 +60,11 @@ export const Home = () => {
   return (
     <>
       <Container>
+        <Carousel />
         <DemoVid />
         <AboutProducts />
         <Image src={elevator} />
         <Enginners engs={engineers} />
-        {/* <Sheet sx={{ display: "flex", justifyContent: "center" }}>
-          <NavigateButton text={"Submit a Complaint"} to={"/form"} />
-        </Sheet> */}
       </Container>
     </>
   );
