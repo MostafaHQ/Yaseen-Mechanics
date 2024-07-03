@@ -15,7 +15,7 @@ const Container = styled(Sheet)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   background: "var(--bright)",
-  padding: "25px",
+  padding: "0px 25px 25px 25px",
   gap: "20px",
 }));
 

@@ -7,12 +7,13 @@ import logoImg from "../Assets/logo-removebg-preview.png";
 import { useState } from "react";
 import { UserMenu } from "../Components/UserMenu";
 import { NavigateButton } from "../Components/NavigateButton";
+import { DrawerMobileNavigation } from "../Components/MobileNavigation";
 
 const NavbarContainer = styled(Sheet)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  padding: "15px 22px",
+  padding: "0px 22px",
   background: "var(--bright)",
 }));
 
@@ -64,6 +65,7 @@ export const Header = () => {
     <>
       <NavbarContainer>
         <SideContainer>
+          <DrawerMobileNavigation />
           <Link to={"/"}>
             <Image src={logoImg} />
           </Link>
@@ -85,18 +87,7 @@ export const Header = () => {
         <SideContainer>
           <NavigateButton text={"My Purchases"} to={"/purchases"} />
           <IconContainer>
-            <PersonOutlineOutlinedIcon
-              onClick={handleUserMenuClick}
-              sx={{
-                display: {
-                  xs: "none",
-                  sm: "none",
-                  md: "none",
-                  lg: "inline",
-                  xl: "inline",
-                },
-              }}
-            />
+            <PersonOutlineOutlinedIcon onClick={handleUserMenuClick} />
           </IconContainer>
         </SideContainer>
       </NavbarContainer>

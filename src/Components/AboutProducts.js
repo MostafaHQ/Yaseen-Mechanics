@@ -49,7 +49,7 @@ const Description = styled("p")(({ theme }) => ({
 
 const Image = styled("img")(({ theme }) => ({
   width: "100%",
-  height: "auto",
+  height: "500px",
   borderRadius: "10px",
 }));
 
