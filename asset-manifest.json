@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Yaseen-Mechanics/static/css/main.3ce4ef7b.css",
+    "main.js": "/Yaseen-Mechanics/static/js/main.26d22290.js",
+    "static/js/453.f12da8a1.chunk.js": "/Yaseen-Mechanics/static/js/453.f12da8a1.chunk.js",
+    "static/media/demo.mp4": "/Yaseen-Mechanics/static/media/demo.9e2d03a24e2a33c5bdd6.mp4",
+    "static/media/solar2.jpg": "/Yaseen-Mechanics/static/media/solar2.63ac041ab6c4eb238214.jpg",
+    "static/media/fahed.jpeg": "/Yaseen-Mechanics/static/media/fahed.d02190513ea27583b6e5.jpeg",
+    "static/media/generator3.jpeg": "/Yaseen-Mechanics/static/media/generator3.60d86d831bbf5b7f15a7.jpeg",
+    "static/media/generator1.jpeg": "/Yaseen-Mechanics/static/media/generator1.5894c3ec15a47e177fe2.jpeg",
+    "static/media/shareef.jpeg": "/Yaseen-Mechanics/static/media/shareef.8b7e703944965d70bd1f.jpeg",
+    "static/media/Ashqar.jpeg": "/Yaseen-Mechanics/static/media/Ashqar.d598435ffc491c90f736.jpeg",
+    "static/media/hero3.jpg": "/Yaseen-Mechanics/static/media/hero3.544bffcd40626843a257.jpg",
+    "static/media/generator4.jpeg": "/Yaseen-Mechanics/static/media/generator4.fe800c46036d20e7a18d.jpeg",
+    "static/media/elevator.jpg": "/Yaseen-Mechanics/static/media/elevator.1b5d47363417e7cb4345.jpg",
+    "static/media/ups2.jpg": "/Yaseen-Mechanics/static/media/ups2.4fa6788c72f98b28041c.jpg",
+    "static/media/shadi.jpeg": "/Yaseen-Mechanics/static/media/shadi.23d6e3e51f62b01292c0.jpeg",
+    "static/media/logo-removebg-preview.png": "/Yaseen-Mechanics/static/media/logo-removebg-preview.79bde488f730e2e4dfed.png",
+    "static/media/noor.jpeg": "/Yaseen-Mechanics/static/media/noor.678998f48f2e16e3fc8b.jpeg",
+    "static/media/hero2.jpg": "/Yaseen-Mechanics/static/media/hero2.d6727b942f76e5b64111.jpg",
+    "static/media/instagram-logo.svg": "/Yaseen-Mechanics/static/media/instagram-logo.ea1a14494177fbad1c43cceebf14c8b5.svg",
+    "static/media/whatsapp-logo.svg": "/Yaseen-Mechanics/static/media/whatsapp-logo.8d87ffab8f86a953f8251bc268ac6ef4.svg",
+    "static/media/facebook.svg": "/Yaseen-Mechanics/static/media/facebook.b4300f2c61426471fa5ca93e391e47ea.svg",
+    "static/media/location.svg": "/Yaseen-Mechanics/static/media/location.e52811c09390d4e900b93301587a1946.svg",
+    "index.html": "/Yaseen-Mechanics/index.html",
+    "main.3ce4ef7b.css.map": "/Yaseen-Mechanics/static/css/main.3ce4ef7b.css.map",
+    "main.26d22290.js.map": "/Yaseen-Mechanics/static/js/main.26d22290.js.map",
+    "453.f12da8a1.chunk.js.map": "/Yaseen-Mechanics/static/js/453.f12da8a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ce4ef7b.css",
+    "static/js/main.26d22290.js"
+  ]
+}
