@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Yaseen-Mechanics/static/css/main.3ce4ef7b.css",
-    "main.js": "/Yaseen-Mechanics/static/js/main.26d22290.js",
+    "main.js": "/Yaseen-Mechanics/static/js/main.f32a0441.js",
     "static/js/453.f12da8a1.chunk.js": "/Yaseen-Mechanics/static/js/453.f12da8a1.chunk.js",
     "static/media/demo.mp4": "/Yaseen-Mechanics/static/media/demo.9e2d03a24e2a33c5bdd6.mp4",
     "static/media/solar2.jpg": "/Yaseen-Mechanics/static/media/solar2.63ac041ab6c4eb238214.jpg",
@@ -24,11 +24,11 @@
     "static/media/location.svg": "/Yaseen-Mechanics/static/media/location.e52811c09390d4e900b93301587a1946.svg",
     "index.html": "/Yaseen-Mechanics/index.html",
     "main.3ce4ef7b.css.map": "/Yaseen-Mechanics/static/css/main.3ce4ef7b.css.map",
-    "main.26d22290.js.map": "/Yaseen-Mechanics/static/js/main.26d22290.js.map",
+    "main.f32a0441.js.map": "/Yaseen-Mechanics/static/js/main.f32a0441.js.map",
     "453.f12da8a1.chunk.js.map": "/Yaseen-Mechanics/static/js/453.f12da8a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ce4ef7b.css",
-    "static/js/main.26d22290.js"
+    "static/js/main.f32a0441.js"
   ]
 }
