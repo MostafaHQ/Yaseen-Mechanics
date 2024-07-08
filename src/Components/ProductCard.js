@@ -23,14 +23,13 @@ const ProductName = styled("h4")(({ theme }) => ({
   fontSize: "1.2rem",
   lineHeight: 2,
   fontWeight: 600,
-  textAlign: "end",
   textDecoration: "none",
 }));
 
-export const ProductCard = ({ product }) => {
+export const ProductCard = ({ item }) => {
   return (
     <>
-      <LinkedCard key={product.id} to={`/detail/${product.id}`}>
+      <LinkedCard key={item.id} to={`/detail/${item.id}`}>
         <Card
           variant="plain"
           sx={{
@@ -39,10 +38,10 @@ export const ProductCard = ({ product }) => {
             padding: 2,
             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
           }}>
-          <Image src={product.productImg} />
+          <Image src={item.productImg} />
           <CardInfo>
             <Sheet sx={{ background: "var(--bright)", padding: "0 " }}>
-              <ProductName>{product.productName}</ProductName>
+              <ProductName>{item.productName}</ProductName>
             </Sheet>
           </CardInfo>
         </Card>
