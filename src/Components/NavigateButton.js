@@ -14,12 +14,14 @@ const StyledButton = styled(Button)(({ theme }) => ({
 
 export const NavigateButton = ({ text, onClick, to }) => {
   return (
-    <Link to={to}>
-      <StyledButton
-        endDecorator={<KeyboardArrowRight color="neutral" fontSize="lg" />}
-        onClick={onClick}>
-        {text}
-      </StyledButton>
-    </Link>
+    <>
+      <Link to={to}>
+        <StyledButton
+          endDecorator={<KeyboardArrowRight color="neutral" fontSize="lg" />}
+          onClick={onClick}>
+          {text}
+        </StyledButton>
+      </Link>
+    </>
   );
 };

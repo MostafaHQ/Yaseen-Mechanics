@@ -1,6 +1,6 @@
-import { Button, Sheet } from "@mui/joy";
+import { Sheet } from "@mui/joy";
 import { styled } from "@mui/joy/styles";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Popover from "@mui/material/Popover";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import logoImg from "../Assets/logo-removebg-preview.png";
@@ -51,6 +51,7 @@ const IconContainer = styled(Sheet)(({ theme }) => ({
 
 export const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
+  const location = useLocation();
 
   const handleUserMenuClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -85,7 +86,9 @@ export const Header = () => {
           </NavbarLinksContainer>
         </SideContainer>
         <SideContainer>
-          <NavigateButton text={"My Purchases"} to={"/purchases"} />
+          {location.pathname !== "/" && (
+            <NavigateButton text={"My Purchases"} to={"/purchases"} />
+          )}
           <IconContainer>
             <PersonOutlineOutlinedIcon onClick={handleUserMenuClick} />
           </IconContainer>

@@ -1,7 +1,9 @@
 import { Sheet } from "@mui/joy";
 import { styled } from "@mui/joy/styles";
 import React from "react";
-import GenerateImg from "../Assets/generator.jpeg";
+import GenerateImg from "../Assets/generator1.jpeg";
+import UpsImg from "../Assets/ups2.jpg";
+import SolarImg from "../Assets/solar2.jpg";
 
 const Container = styled(Sheet)(({ theme }) => ({
   display: "flex",
@@ -64,7 +66,10 @@ export const AboutProducts = () => {
           <WriteSide>
             <Title>المـــولــدات</Title>
             <Description>
-              نقدم الأجود بين المولدات من ناحية قوة الأحمال وملف النحاس السميك
+              وكلاء شركة انفنتي بور التركية وشركة بور لينك البريطانية التي تحتضن
+              محركات بيركنز العالمية
+              <br /> حيث نقدم الاستشارات الصناعية في مجال مولدات الديزل والبنزين
+              مع لوحات التحويل الاتوماتيكي
             </Description>
           </WriteSide>
         </LinearContainer>
@@ -80,17 +85,19 @@ export const AboutProducts = () => {
             </Description>
           </WriteSide>
           <ImageSide>
-            <Image src={GenerateImg} />
+            <Image src={UpsImg} />
           </ImageSide>
         </LinearContainer>
         <LinearContainer>
           <ImageSide>
-            <Image src={GenerateImg} />
+            <Image src={SolarImg} />
           </ImageSide>
           <WriteSide>
             <Title>الطــاقة الشمــسية</Title>
             <Description>
-              نقدم الأجود بين المولدات من ناحية قوة الأحمال وملف النحاس السميك
+              نعمل بجهد كبير على تركيب أفضل التقنيات في مجال الطاقة النظيفة
+              <br /> ما يميز شركتنا هي تقنيات التركيب والتشغيل والصيانة ضمن
+              معايير عالمية
             </Description>
           </WriteSide>
         </LinearContainer>

@@ -1,6 +1,9 @@
 import { styled } from "@mui/joy/styles";
 import Grid from "@mui/joy/Grid";
-import productImg from "../Assets/generator.jpeg";
+import productImg from "../Assets/generator3.jpeg";
+import { useParams } from "react-router-dom";
+import { DataContext } from "../Contexts/DataContext";
+import { useContext } from "react";
 
 const StyledData = styled("p")(({ theme }) => ({
   fontSize: "1.2rem",
@@ -14,43 +17,47 @@ const StyledImg = styled("img")(({ theme }) => ({
 }));
 
 export const ProductDetails = () => {
+  const { productId } = useParams();
+  const { dataArray } = useContext(DataContext);
+  const product = dataArray.find((item) => item.id === parseInt(productId));
+
+  if (!product) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <>
       <Grid container padding={1} spacing={3} sx={{ flexGrow: 1 }}>
         <Grid xs={12} sm={6} md={6}>
           <label>Customer Name:</label>
-          <StyledData>Fathi</StyledData>
+          <StyledData>{product.customerName}</StyledData>
         </Grid>
         <Grid xs={12} sm={6} md={6}>
           <label>Product Name:</label>
-          <StyledData>Generator</StyledData>
-        </Grid>
-        <Grid xs={12} sm={6} md={6}>
-          <label>Product Name:</label>
-          <StyledData>Generator</StyledData>
+          <StyledData>{product.productName}</StyledData>
         </Grid>
         <Grid xs={12} sm={6} md={6}>
           <label>Product Price:</label>
-          <StyledData>10000 ₪</StyledData>
+          <StyledData>{product.productPrice}</StyledData>
         </Grid>
         <Grid xs={12} sm={6} md={6}>
           <label>Delivery Date:</label>
-          <StyledData>29/6/2024</StyledData>
+          <StyledData>{product.deliveryDate}</StyledData>
         </Grid>
         <Grid xs={12} sm={6} md={6}>
           <label>Quantity:</label>
-          <StyledData>1</StyledData>
+          <StyledData>{product.quantity}</StyledData>
         </Grid>
         <Grid xs={12} sm={6} md={6}>
           <label>Warranty Period:</label>
-          <StyledData>2 years</StyledData>
+          <StyledData>{product.warrantyPeriod}</StyledData>
         </Grid>
         <Grid xs={12} sm={6} md={6}>
           <label>Routine Maintenance:</label>
-          <StyledData>every 3 months</StyledData>
+          <StyledData>{product.routineMaintenance}</StyledData>
         </Grid>
       </Grid>
-      <StyledImg src={productImg} />
+      <StyledImg src={product.productImg} />
     </>
   );
 };
