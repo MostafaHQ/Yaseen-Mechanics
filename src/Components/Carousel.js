@@ -3,7 +3,7 @@ import { styled } from "@mui/joy/styles";
 import SwipeableViews from "react-swipeable-views-react-18-fix";
 import { autoPlay } from "react-swipeable-views-utils";
 import Box from "@mui/material/Box";
-import hero1 from "../Assets/hero1.jpg";
+import hero1 from "../Assets/hero3.jpg";
 import hero2 from "../Assets/hero2.jpg";
 import { Sheet } from "@mui/joy";
 
